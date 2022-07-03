@@ -3,6 +3,21 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <PlatformTarget>x64</PlatformTarget>
+	  <Nullable>enable</Nullable>
+	  <BaseOutputPath>C:\RAGEMP\server-files\dotnet\resources\crimeaserver</BaseOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RAGEMP-Bootstrapper" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>..\..\..\dotnet\runtime\Bootstrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
